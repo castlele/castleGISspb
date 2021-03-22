@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchImage" translatesAutoresizingMaskIntoConstraints="NO" id="4pt-j5-X0y">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" name="accent"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="414" id="9U3-Gk-OhT"/>
+                                    <constraint firstAttribute="height" constant="896" id="tUp-ep-tCW"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="castleGIS " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Hx-WE-yq2">
+                                <rect key="frame" x="116.5" y="159" width="181" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="3sz-kF-fVI"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="181" id="h3I-dN-wt2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="30"/>
+                                <color key="textColor" name="subAccent"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" name="main"/>
+                        <constraints>
+                            <constraint firstItem="0Hx-WE-yq2" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="1HE-rW-hIs"/>
+                            <constraint firstItem="4pt-j5-X0y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Fgh-Mi-csP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0Hx-WE-yq2" secondAttribute="bottom" constant="665" id="KPW-l4-loI"/>
+                            <constraint firstAttribute="bottom" secondItem="4pt-j5-X0y" secondAttribute="bottom" id="Lrz-hD-MXb"/>
+                            <constraint firstItem="4pt-j5-X0y" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="ju9-5Y-dzd"/>
+                            <constraint firstItem="4pt-j5-X0y" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="y0q-Sh-drd"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="launchImage" width="1280" height="720"/>
+        <namedColor name="accent">
+            <color red="0.92941176470588238" green="0.93333333333333335" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="main">
+            <color red="0.89411764705882357" green="0.98431372549019602" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="subAccent">
+            <color red="0.47058823529411764" green="0.40784313725490196" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
