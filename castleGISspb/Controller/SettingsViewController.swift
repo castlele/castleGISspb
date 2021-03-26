@@ -46,6 +46,9 @@ final class SettingsViewController: UIViewController {
 	
 	private func setupViews() {
 		view.backgroundColor = ColorPicker.getMainColor()
+		
+		setupGestureRecognition()
+		
 		dismissButton.setTitleColor(ColorPicker.getSubAccentColor(), for: .normal)
 		
 		setupSectionView()
@@ -54,10 +57,13 @@ final class SettingsViewController: UIViewController {
 		setButtonsTargets()
 	}
 	
+	private func setupGestureRecognition() {
+		let gesture = UISwipeGestureRecognizer(target: self, action: #selector(moveBackToGeoView))
+		gesture.direction = .right
+		view.addGestureRecognizer(gesture)
+	}
+	
 	private func setupSectionView() {
-		for i in labels {
-			print(i)
-		}
 		sectionView = SectionView(labels: labels, actions: actions)
 		sectionView.customizeSection(bgColor: ColorPicker.getSubMainColor(), rowsColor: nil, rowsTextColor: ColorPicker.getStandardTextColor(), rowsCheckBoxColor: ColorPicker.getAccentColor())
 		sectionView.makeSection()

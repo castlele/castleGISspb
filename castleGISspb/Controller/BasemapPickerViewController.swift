@@ -88,15 +88,22 @@ final class BasemapPickerViewController: UIViewController {
 	private func setupViews() {
 		view.backgroundColor = ColorPicker.getMainColor()
 		view.layer.cornerRadius = Measurements.getCornerRaduis()
+		setDismissGesture()
 		
 		setupDividerView()
 		setupGeoViewSegmentedControlPicker()
 		setupShowCaseOfBasemapsForMapView()
 		setupShowCaseOfBasemapsForSceneView()
 		
-		setUpButtonsTargets()
+		setupButtonsTargets()
 		
 		setDelegate()
+	}
+	
+	private func setDismissGesture() {
+		let gesture = UISwipeGestureRecognizer(target: self, action: #selector(dismissBasemapPickerAndApplyChanges))
+		gesture.direction = .down
+		view.addGestureRecognizer(gesture)
 	}
 	
 	private func setupDividerView() {
@@ -127,12 +134,30 @@ final class BasemapPickerViewController: UIViewController {
 		let basemaps = ["Topographic", "Streets", "Navigation", "Imagery"]
 		setLabels(namesOfBasemaps: basemaps)
 		showCaseOfBasemapsForMapView = ShowcaseView(views: basemapButtonsForMapView, labels: basemapNames)
+		
+		let gesture = UISwipeGestureRecognizer(target: self, action: #selector(swipeToLeftShowCase))
+		gesture.direction = .left
+		showCaseOfBasemapsForMapView.addGestureRecognizer(gesture)
+	}
+	
+	@objc private func swipeToLeftShowCase(_ sender: UIButton) {
+		geoViewSegmentedControllPicker.selectedSegmentIndex = 1
+		changeGeoViewShowCase(geoViewSegmentedControllPicker)
 	}
 	
 	private func setupShowCaseOfBasemapsForSceneView() {
 		let basemaps = ["Topographic", "Streets", "National Geographic", "Imagery"]
 		setLabels(namesOfBasemaps: basemaps)
 		showCaseOfBasemapsForSceneView = ShowcaseView(views: basemapButtonsForSceneView, labels: basemapNames)
+		
+		let gesture = UISwipeGestureRecognizer(target: self, action: #selector(swipeToRightShowCase))
+		gesture.direction = .right
+		showCaseOfBasemapsForSceneView.addGestureRecognizer(gesture)
+	}
+	
+	@objc private func swipeToRightShowCase(_ sender: UIButton) {
+		geoViewSegmentedControllPicker.selectedSegmentIndex = 0
+		changeGeoViewShowCase(geoViewSegmentedControllPicker)
 	}
 	
 	private func setLabels(namesOfBasemaps names: [String]) {
@@ -145,7 +170,7 @@ final class BasemapPickerViewController: UIViewController {
 		}
 	}
 	
-	private func setUpButtonsTargets() {
+	private func setupButtonsTargets() {
 		dismissButton.addTarget(self, action: #selector(dismissBasemapPickerAndApplyChanges), for: .touchUpInside)
 		geoViewSegmentedControllPicker.addTarget(self, action: #selector(changeGeoViewShowCase), for: .valueChanged)
 	}
