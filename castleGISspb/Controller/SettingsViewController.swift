@@ -12,8 +12,12 @@ final class SettingsViewController: UIViewController {
 	
 	private let deviceLanguage = NSLocale.current.languageCode
 	
-	private let labelsEN = ["District's regions", "District's info", "Magnifier", "Grid"]
-	private let labelsRU = ["Регионы районов", "Информация о районах", "Лупа", "Сетка"]
+	let labels = [
+		NSLocalizedString("Districts' highlighting", comment: ""),
+		NSLocalizedString("Districts' info", comment: ""),
+		NSLocalizedString("Magnifier", comment: ""),
+		NSLocalizedString("Grid", comment: "")
+	]
 	private let actions = [#selector(addAndRemoveDistrictsRegions), #selector(addAndRemoveDistrictsCenters), #selector(showMagnifier), #selector(showGrid)]
 	
 	var mapViewController : MapViewController!
@@ -25,7 +29,8 @@ final class SettingsViewController: UIViewController {
 	
 	private var dismissButton: ButtonView = {
 		let font = UIFont.boldSystemFont(ofSize: 20)
-		let button = ButtonView(bgColor: nil, titleColor: ColorPicker.getSubAccentColor(), font: font, text: "< Back", isShadow: false)
+		let label = NSLocalizedString("< Back", comment: "")
+		let button = ButtonView(bgColor: nil, titleColor: ColorPicker.getSubAccentColor(), font: font, text: label, isShadow: false)
 
 		return button
 	}()
@@ -50,12 +55,10 @@ final class SettingsViewController: UIViewController {
 	}
 	
 	private func setupSectionView() {
-		if deviceLanguage == "ru" {
-			sectionView = SectionView(labels: labelsRU, actions: actions)
-		} else {
-			sectionView = SectionView(labels: labelsEN, actions: actions)
+		for i in labels {
+			print(i)
 		}
-		
+		sectionView = SectionView(labels: labels, actions: actions)
 		sectionView.customizeSection(bgColor: ColorPicker.getSubMainColor(), rowsColor: nil, rowsTextColor: ColorPicker.getStandardTextColor(), rowsCheckBoxColor: ColorPicker.getAccentColor())
 		sectionView.makeSection()
 	}

@@ -32,6 +32,7 @@
 		7B6D829025F8968C00F8F4B6 /* SceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6D828F25F8968C00F8F4B6 /* SceneViewController.swift */; };
 		7BBBC52625F77C1000AF10AC /* DividerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBBC52525F77C1000AF10AC /* DividerView.swift */; };
 		7BC3A84525FBD546002973E3 /* ShowcaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC3A84425FBD546002973E3 /* ShowcaseView.swift */; };
+		7BE6B0A1260DD97500018329 /* Lacalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7BE6B0A3260DD97500018329 /* Lacalizable.strings */; };
 		7BEA98D225F519F1009DE4E4 /* ColorSets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BEA98D125F519F1009DE4E4 /* ColorSets.xcassets */; };
 		7BEA98D425F51A1B009DE4E4 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BEA98D325F51A1B009DE4E4 /* Endpoint.swift */; };
 		7BEA98D925F51A71009DE4E4 /* DistrictObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BEA98D825F51A71009DE4E4 /* DistrictObject.swift */; };
@@ -61,7 +62,6 @@
 
 /* Begin PBXFileReference section */
 		7B06DB7225FE2E63001C009E /* DistrictsWikipediaObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistrictsWikipediaObject.swift; sourceTree = "<group>"; };
-		7B06DB7425FE32F1001C009E /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		7B06DB7525FE3B28001C009E /* DetailWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailWebViewController.swift; sourceTree = "<group>"; };
 		7B1B884F260639A2001235FE /* CompassButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompassButton.swift; sourceTree = "<group>"; };
 		7B40874E260760830040764D /* InteractiveTransitionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractiveTransitionDelegate.swift; sourceTree = "<group>"; };
@@ -74,7 +74,6 @@
 		7B5DF17B25F506BA00F8900E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		7B5DF17D25F506BA00F8900E /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		7B5DF18225F506BC00F8900E /* ImageSets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ImageSets.xcassets; sourceTree = "<group>"; };
-		7B5DF18525F506BC00F8900E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7B5DF18725F506BC00F8900E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7B5DF18F25F506D000F8900E /* ArcGIS.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = ArcGIS.xcframework; path = ../../../Library/SDKs/ArcGIS/Frameworks/ArcGIS.xcframework; sourceTree = "<group>"; };
 		7B5DF19725F5076D00F8900E /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
@@ -87,6 +86,9 @@
 		7B6D828F25F8968C00F8F4B6 /* SceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneViewController.swift; sourceTree = "<group>"; };
 		7BBBC52525F77C1000AF10AC /* DividerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DividerView.swift; sourceTree = "<group>"; };
 		7BC3A84425FBD546002973E3 /* ShowcaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowcaseView.swift; sourceTree = "<group>"; };
+		7BE6B0A2260DD97500018329 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Lacalizable.strings; sourceTree = "<group>"; };
+		7BE6B0A8260DE1A200018329 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7BE6B0AA260DE65F00018329 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Lacalizable.strings; sourceTree = "<group>"; };
 		7BEA98D125F519F1009DE4E4 /* ColorSets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ColorSets.xcassets; sourceTree = "<group>"; };
 		7BEA98D325F51A1B009DE4E4 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		7BEA98D825F51A71009DE4E4 /* DistrictObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistrictObject.swift; sourceTree = "<group>"; };
@@ -162,6 +164,7 @@
 				7B5DF17925F506BA00F8900E /* AppDelegate.swift */,
 				7B5DF17B25F506BA00F8900E /* SceneDelegate.swift */,
 				7B5DF18425F506BC00F8900E /* LaunchScreen.storyboard */,
+				7BE6B0A3260DD97500018329 /* Lacalizable.strings */,
 				7B5DF19625F5072900F8900E /* Model */,
 				7B5DF19525F5072100F8900E /* View */,
 				7B5DF19425F5071C00F8900E /* Controller */,
@@ -318,7 +321,6 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
-				Base,
 				ru,
 			);
 			mainGroup = 7B5DF16D25F506BA00F8900E;
@@ -339,6 +341,7 @@
 				7BEA98D225F519F1009DE4E4 /* ColorSets.xcassets in Resources */,
 				7B5DF18625F506BC00F8900E /* LaunchScreen.storyboard in Resources */,
 				7B5DF18325F506BC00F8900E /* ImageSets.xcassets in Resources */,
+				7BE6B0A1260DD97500018329 /* Lacalizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,10 +392,18 @@
 		7B5DF18425F506BC00F8900E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				7B5DF18525F506BC00F8900E /* Base */,
-				7B06DB7425FE32F1001C009E /* ru */,
+				7BE6B0A8260DE1A200018329 /* en */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		7BE6B0A3260DD97500018329 /* Lacalizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7BE6B0A2260DD97500018329 /* en */,
+				7BE6B0AA260DE65F00018329 /* ru */,
+			);
+			name = Lacalizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

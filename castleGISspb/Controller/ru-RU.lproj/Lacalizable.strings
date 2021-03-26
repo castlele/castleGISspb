@@ -1,0 +1,14 @@
+/* 
+  Lacalizable.strings
+  castleGISspb
+
+  Created by Nikita Semenov on 26.03.2021.
+  
+*/
+
+// SettingsViewControlelr
+"DistrictsHighlighting" = "Подсветка районов";
+"DistrictsInfo" = "Информация о районах";
+"Magnifier" = "Лупа";
+"Grid" = "Сетка";
+"Back" = "< Назад";

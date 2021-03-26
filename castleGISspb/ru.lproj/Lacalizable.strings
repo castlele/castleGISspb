@@ -1,0 +1,15 @@
+/* 
+  Lacalizable.strings
+  castleGISspb
+
+  Created by Nikita Semenov on 26.03.2021.
+  
+*/
+
+// SettingsViewController
+"Districts_Highlighting" = "Districts' highlighting";
+"Districts_Info" = "Districts' info";
+"Magnifier" = "Magnifier";
+"Grid" = "Grid";
+"Back" = "< Back";
+
