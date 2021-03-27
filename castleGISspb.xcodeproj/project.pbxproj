@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		7B06DB7325FE2E63001C009E /* DistrictsWikipediaObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B06DB7225FE2E63001C009E /* DistrictsWikipediaObject.swift */; };
 		7B06DB7625FE3B28001C009E /* DetailWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B06DB7525FE3B28001C009E /* DetailWebViewController.swift */; };
+		7B1B2324260E45E0004A5B9D /* BlankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B1B2323260E45E0004A5B9D /* BlankViewController.swift */; };
 		7B1B8850260639A2001235FE /* CompassButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B1B884F260639A2001235FE /* CompassButton.swift */; };
 		7B40874F260760830040764D /* InteractiveTransitionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B40874E260760830040764D /* InteractiveTransitionDelegate.swift */; };
 		7B408751260761760040764D /* InteractiveModalPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B408750260761760040764D /* InteractiveModalPresentationController.swift */; };
@@ -63,6 +64,7 @@
 /* Begin PBXFileReference section */
 		7B06DB7225FE2E63001C009E /* DistrictsWikipediaObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistrictsWikipediaObject.swift; sourceTree = "<group>"; };
 		7B06DB7525FE3B28001C009E /* DetailWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailWebViewController.swift; sourceTree = "<group>"; };
+		7B1B2323260E45E0004A5B9D /* BlankViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlankViewController.swift; sourceTree = "<group>"; };
 		7B1B884F260639A2001235FE /* CompassButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompassButton.swift; sourceTree = "<group>"; };
 		7B40874E260760830040764D /* InteractiveTransitionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractiveTransitionDelegate.swift; sourceTree = "<group>"; };
 		7B408750260761760040764D /* InteractiveModalPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractiveModalPresentationController.swift; sourceTree = "<group>"; };
@@ -204,6 +206,7 @@
 				7BEA98E225F51B3B009DE4E4 /* SettingsViewController.swift */,
 				7BF4468325FA43A0005F9E45 /* BasemapPickerViewController.swift */,
 				7B06DB7525FE3B28001C009E /* DetailWebViewController.swift */,
+				7B1B2323260E45E0004A5B9D /* BlankViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -379,6 +382,7 @@
 				7B6D829025F8968C00F8F4B6 /* SceneViewController.swift in Sources */,
 				7B40874F260760830040764D /* InteractiveTransitionDelegate.swift in Sources */,
 				7B5DF1A125F5080800F8900E /* AGSGeoView+Extension.swift in Sources */,
+				7B1B2324260E45E0004A5B9D /* BlankViewController.swift in Sources */,
 				7B5DF19D25F507B600F8900E /* Coordinates.swift in Sources */,
 				7B5ABBB225FB48FE00DF8F5E /* Measurements.swift in Sources */,
 				7B5DF1A325F5082A00F8900E /* ButtonView.swift in Sources */,
