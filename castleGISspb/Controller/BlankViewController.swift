@@ -9,9 +9,32 @@ import UIKit
 
 final class TabBarView: UIView {
 	
-	let height: CGFloat = 100
+	let height: CGFloat = 70
 	var width : CGFloat {
-		frame.width
+		UIScreen.main.bounds.width
+	}
+	
+	var tabBarItems : [UIView]!
+	
+	var paddingBetweenItems : CGFloat {
+		(width - CGFloat(tabBarItems.count) * (Measurements.getStandardButtonSize())) / CGFloat(tabBarItems.count + 1)
+	}
+	
+	required init?(coder: NSCoder) {
+		fatalError()
+	}
+	
+	required override init(frame: CGRect) {
+		super.init(frame: frame)
+	}
+	
+	convenience init(items: [UIView]) {
+		self.init(frame: .zero)
+		
+		tabBarItems = items
+		translatesAutoresizingMaskIntoConstraints = false
+		setConstraints()
+		print(paddingBetweenItems)
 	}
 	
 	override func draw(_ rect: CGRect) {
@@ -20,8 +43,32 @@ final class TabBarView: UIView {
 		ColorPicker.getSubMainColor().setFill()
 		rectangle.fill()
 	}
+	
+	func setConstraints() {
+		for (number, item) in tabBarItems.enumerated() {
+			addSubview(item)
+			if number == 0 {
+				NSLayoutConstraint.activate([
+					item.leadingAnchor.constraint(equalTo: leadingAnchor, constant: paddingBetweenItems),
+					item.heightAnchor.constraint(equalToConstant: Measurements.getStandardButtonSize() - 15),
+					item.widthAnchor.constraint(equalToConstant: Measurements.getStandardButtonSize()),
+					item.centerYAnchor.constraint(equalTo: topAnchor)
+				])
+			} else {
+				NSLayoutConstraint.activate([
+					item.leadingAnchor.constraint(equalTo: tabBarItems[number - 1].trailingAnchor, constant: paddingBetweenItems),
+					item.heightAnchor.constraint(equalToConstant: Measurements.getStandardButtonSize() - 15),
+					item.widthAnchor.constraint(equalToConstant: Measurements.getStandardButtonSize()),
+					item.centerYAnchor.constraint(equalTo: topAnchor)
+				])
+			}
+			
+		}
+	}
 }
 
+
+// MARK:- MapButton
 final class MapButton: UIButton {
 	
 	private struct Constants {
@@ -66,6 +113,7 @@ final class MapButton: UIButton {
 	convenience init() {
 		self.init(frame: .zero)
 		setupTarget()
+		translatesAutoresizingMaskIntoConstraints = false
 	}
 	
 	func setupTarget() {
@@ -179,6 +227,7 @@ final class MapButton: UIButton {
 	}
 }
 
+// MARK:- ViewController
 class BlankViewController: UIViewController {
 	
 	var tabBar: TabBarView!
@@ -188,17 +237,16 @@ class BlankViewController: UIViewController {
         super.viewDidLoad()
 		view.backgroundColor = ColorPicker.getMainColor()
 		
-		tabBar = TabBarView()
-		tabBar.translatesAutoresizingMaskIntoConstraints = false
-		
 		mapButton = MapButton()
-		mapButton.translatesAutoresizingMaskIntoConstraints = false
+		let mapButtonTwo = MapButton()
+		let mapButtonThree = MapButton()
+		tabBar = TabBarView(items: [mapButton, mapButtonTwo, mapButtonThree])
 		
-		view.addSubviews(tabBar, mapButton)
-		addConstraints()
+		view.addSubviews(tabBar)
+		setConstraints()
     }
 	
-	func addConstraints() {
+	func setConstraints() {
 //		let safeArea = view.safeAreaLayoutGuide
 		
 		NSLayoutConstraint.activate([
@@ -207,11 +255,6 @@ class BlankViewController: UIViewController {
 			tabBar.heightAnchor.constraint(equalToConstant: tabBar.height),
 			tabBar.widthAnchor.constraint(equalTo: view.widthAnchor),
 			tabBar.bottomAnchor.constraint(equalTo: view.bottomAnchor),
-			
-			mapButton.heightAnchor.constraint(equalToConstant: Measurements.getStandardButtonSize()),
-			mapButton.widthAnchor.constraint(equalToConstant: Measurements.getStandardButtonSize() + 15),
-			mapButton.centerXAnchor.constraint(equalTo: tabBar.centerXAnchor),
-			mapButton.centerYAnchor.constraint(equalTo: tabBar.centerYAnchor),
 		])
 	}
 }
