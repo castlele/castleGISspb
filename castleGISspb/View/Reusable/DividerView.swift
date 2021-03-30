@@ -11,7 +11,7 @@ import UIKit
 class DividerView: UIView {
 	
 	private let DEFAULT_COLOR = ColorPicker.getSubAccentColor()
-	private let DEFAULT_CORNER_RADIUS : CGFloat = Measurements.getCornerRaduis() - 10
+	private let DEFAULT_CORNER_RADIUS : CGFloat = Measurements.getCornerRadius() - 10
 	
 	let DEFAULT_HEIGHT : CGFloat = 2
 	

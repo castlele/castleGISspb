@@ -10,7 +10,7 @@ import UIKit
 
 class SectionView: UIView {
 	
-	private let CORNER_RADIUS : CGFloat = Measurements.getCornerRaduis()
+	private let CORNER_RADIUS : CGFloat = Measurements.getCornerRadius()
 	private let PADDING_BETWEEN_DIVIDER : CGFloat = 4
 	private let ROW_HEIGHT : CGFloat = 20
 	private var ROWS_TEXT_FONT = UIFont.boldSystemFont(ofSize: 17)

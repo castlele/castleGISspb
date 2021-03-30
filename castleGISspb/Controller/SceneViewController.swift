@@ -24,7 +24,7 @@ final class SceneViewController: UIViewController {
 	lazy private var basemapPickerButton : ButtonView = {
 		let imageConfig = UIImage.SymbolConfiguration(pointSize: 20, weight: .regular, scale: .large)
 		let button = ButtonView(bgColor: ColorPicker.getMainColor(), tintColor: ColorPicker.getSubAccentColor(), image: "square.stack.3d.down.forward.fill", imageConfiguration: imageConfig)
-		button.layer.cornerRadius = Measurements.getCornerRaduis()
+		button.layer.cornerRadius = Measurements.getCornerRadius()
 		
 		return button
 	}()

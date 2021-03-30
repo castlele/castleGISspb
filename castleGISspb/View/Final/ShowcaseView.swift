@@ -60,7 +60,7 @@ final class ShowcaseView: UIView {
 	private func setupViews() {
 		translatesAutoresizingMaskIntoConstraints = false
 		backgroundColor = ColorPicker.getSubMainColor()
-		layer.cornerRadius = Measurements.getCornerRaduis()
+		layer.cornerRadius = Measurements.getCornerRadius()
 		
 		for index in 0..<amountOfElements {
 			setupViews(withIndex: index)
@@ -74,7 +74,7 @@ final class ShowcaseView: UIView {
 		let label = labels[i]
 		
 		view.translatesAutoresizingMaskIntoConstraints = false
-		view.layer.cornerRadius = Measurements.getCornerRaduis()
+		view.layer.cornerRadius = Measurements.getCornerRadius()
 		view.layer.borderWidth = 3
 		view.layer.borderColor = ColorPicker.getSubAccentColor().cgColor
 		addTargetIfButton(for: view)

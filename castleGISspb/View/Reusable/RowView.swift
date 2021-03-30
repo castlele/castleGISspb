@@ -59,7 +59,7 @@ extension RowView {
 	
 	private func setBackgrount(_ color: UIColor?) {
 		backgroundColor = color
-		layer.cornerRadius = Measurements.getCornerRaduis()
+		layer.cornerRadius = Measurements.getCornerRadius()
 	}
 	
 	private func enableConstraints() {

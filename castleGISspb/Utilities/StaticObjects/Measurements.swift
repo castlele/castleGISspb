@@ -18,7 +18,7 @@ struct Measurements {
 	private static let PADDING_BETWEEN_VIEWS : CGFloat = 40
 	private static let PADDING_FROM_BOTTOM_MARGIN : CGFloat = -30
 	
-	static func getCornerRaduis() -> CGFloat {
+	static func getCornerRadius() -> CGFloat {
 		CORNER_RADIUS
 	}
 	

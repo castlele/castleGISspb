@@ -87,7 +87,7 @@ final class BasemapPickerViewController: UIViewController {
 	
 	private func setupViews() {
 		view.backgroundColor = ColorPicker.getMainColor()
-		view.layer.cornerRadius = Measurements.getCornerRaduis()
+		view.layer.cornerRadius = Measurements.getCornerRadius()
 		setDismissGesture()
 		
 		setupDividerView()
@@ -124,7 +124,7 @@ final class BasemapPickerViewController: UIViewController {
 		geoViewSegmentedControllPicker.setTitleTextAttributes(textAttributes, for: .normal)
 		geoViewSegmentedControllPicker.backgroundColor = ColorPicker.getSubMainColor()
 		geoViewSegmentedControllPicker.selectedSegmentTintColor = ColorPicker.getSubAccentColor()
-		geoViewSegmentedControllPicker.layer.cornerRadius = Measurements.getCornerRaduis()
+		geoViewSegmentedControllPicker.layer.cornerRadius = Measurements.getCornerRadius()
 		geoViewSegmentedControllPicker.layer.borderColor = ColorPicker.getAccentColor().cgColor
 		
 		geoViewSegmentedControllPicker.layer.borderWidth = navigationBarDivider.DEFAULT_HEIGHT

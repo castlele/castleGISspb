@@ -28,7 +28,7 @@ final class MapViewController: UIViewController {
 	
 	private var settingsButton : ButtonView = {
 		let button = ButtonView(bgColor: ColorPicker.getMainColor(), tintColor: ColorPicker.getSubAccentColor(), image: "gear", isShadow: true)
-		button.layer.cornerRadius = Measurements.getCornerRaduis()
+		button.layer.cornerRadius = Measurements.getCornerRadius()
 		
 		return button
 	}()
@@ -36,7 +36,7 @@ final class MapViewController: UIViewController {
 	var basemapPickerButton : ButtonView = {
 		let imageConfig = UIImage.SymbolConfiguration(pointSize: 20, weight: .regular, scale: .large)
 		let button = ButtonView(bgColor: ColorPicker.getMainColor(), tintColor: ColorPicker.getSubAccentColor(), image: "square.stack.3d.down.forward.fill", imageConfiguration: imageConfig)
-		button.layer.cornerRadius = Measurements.getCornerRaduis()
+		button.layer.cornerRadius = Measurements.getCornerRadius()
 		
 		return button
 	}()
@@ -44,7 +44,7 @@ final class MapViewController: UIViewController {
 	private var minusScaleButton: ButtonView = {
 		let imageConfig = UIImage.SymbolConfiguration(pointSize: 15, weight: .bold)
 		let button = ButtonView(image: "minus", imageConfiguration: imageConfig, isShadow: true)
-		button.layer.cornerRadius = Measurements.getCornerRaduis() - 5
+		button.layer.cornerRadius = Measurements.getCornerRadius() - 5
 		
 		return button
 	}()
@@ -52,7 +52,7 @@ final class MapViewController: UIViewController {
 	private var plusScaleButton: ButtonView = {
 		let imageConfig = UIImage.SymbolConfiguration(pointSize: 15, weight: .bold)
 		let button = ButtonView(image: "plus", imageConfiguration: imageConfig, isShadow: true)
-		button.layer.cornerRadius = Measurements.getCornerRaduis() - 5
+		button.layer.cornerRadius = Measurements.getCornerRadius() - 5
 		
 		return button
 	}()

@@ -30,7 +30,7 @@ extension AGSGeoView {
 		
 		self.callout.isAccessoryButtonHidden = true
 		
-		self.callout.layer.cornerRadius = Measurements.getCornerRaduis()
+		self.callout.layer.cornerRadius = Measurements.getCornerRadius()
 		self.callout.borderWidth = 2
 		self.callout.borderColor = ColorPicker.getSubMainColor()
 

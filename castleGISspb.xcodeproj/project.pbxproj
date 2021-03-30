@@ -103,6 +103,7 @@
 		7BEA98E825F51B86009DE4E4 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		7BF4467E25F9FD19005F9E45 /* ArcGIS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ArcGIS-Info.plist"; sourceTree = "<group>"; };
 		7BF4468325FA43A0005F9E45 /* BasemapPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasemapPickerViewController.swift; sourceTree = "<group>"; };
+		7BF94CE32613AF13002E6266 /* FancyTabBarController */ = {isa = PBXFileReference; lastKnownFileType = folder; name = FancyTabBarController; path = ../FancyTabBarController; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +147,7 @@
 		7B5DF16D25F506BA00F8900E = {
 			isa = PBXGroup;
 			children = (
+				7BF94CE32613AF13002E6266 /* FancyTabBarController */,
 				7B5DF17825F506BA00F8900E /* castleGISspb */,
 				7B5DF17725F506BA00F8900E /* Products */,
 				7B5DF18E25F506D000F8900E /* Frameworks */,

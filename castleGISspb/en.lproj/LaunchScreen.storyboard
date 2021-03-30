@@ -25,10 +25,9 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="castleGIS " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Hx-WE-yq2">
-                                <rect key="frame" x="116.5" y="159" width="181" height="38"/>
+                                <rect key="frame" x="116.5" y="229" width="181" height="38"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="38" id="3sz-kF-fVI"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="181" id="h3I-dN-wt2"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="30"/>
                                 <color key="textColor" name="subAccent"/>
@@ -40,8 +39,8 @@
                         <constraints>
                             <constraint firstItem="0Hx-WE-yq2" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="1HE-rW-hIs"/>
                             <constraint firstItem="4pt-j5-X0y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Fgh-Mi-csP"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0Hx-WE-yq2" secondAttribute="bottom" constant="665" id="KPW-l4-loI"/>
                             <constraint firstAttribute="bottom" secondItem="4pt-j5-X0y" secondAttribute="bottom" id="Lrz-hD-MXb"/>
+                            <constraint firstItem="0Hx-WE-yq2" firstAttribute="centerY" secondItem="4pt-j5-X0y" secondAttribute="centerY" constant="-200" id="P4C-9O-KhN"/>
                             <constraint firstItem="4pt-j5-X0y" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="ju9-5Y-dzd"/>
                             <constraint firstItem="4pt-j5-X0y" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="y0q-Sh-drd"/>
                         </constraints>
