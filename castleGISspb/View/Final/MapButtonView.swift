@@ -100,7 +100,6 @@ final class MapButtonView: UIButton, TabBarItem {
 	private func drawOpenedMap() {
 		let openedMapPath = UIBezierPath()
 		openedMapPath.move(to: pointsOfOpenedMap[0])
-//		addAnimation(for: "\(openedMapPath)")
 		drawFrameOf(map: openedMapPath, state: .opened)
 		drawCurvedLine(state: .opened)
 		setStroke(for: openedMapPath)
@@ -109,22 +108,10 @@ final class MapButtonView: UIButton, TabBarItem {
 	private func drawClosedMap() {
 		let closedMapPath = UIBezierPath()
 		closedMapPath.move(to: pointsOfClosedMap[0])
-//		addAnimation(for: "\(closedMapPath)")
 		drawFrameOf(map: closedMapPath, state: .closed)
 		drawCurvedLine(state: .closed)
 		drawDottedLine()
 		setStroke(for: closedMapPath)
-	}
-	
-	private func addAnimation(for keyPath: String) {
-		let shapeLayer = CAShapeLayer()
-		layer.addSublayer(shapeLayer)
-		
-		let animation = CABasicAnimation(keyPath: keyPath)
-		animation.fromValue = 0
-		animation.toValue = 1
-		animation.duration = 0.5
-		shapeLayer.add(animation, forKey: nil)
 	}
 
 	private func drawFrameOf(map path: UIBezierPath, state: State) {
@@ -149,7 +136,7 @@ final class MapButtonView: UIButton, TabBarItem {
 	}
 
 	private func setStroke(for path: UIBezierPath) {
-		path.lineWidth = 1
+		path.lineWidth = 1.5
 		path.lineJoinStyle = .round
 		ColorPicker.getSubAccentColor().setStroke()
 		path.stroke()

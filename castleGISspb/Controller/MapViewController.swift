@@ -255,16 +255,16 @@ final class MapViewController: UIViewController {
 			
 			minusScaleButton.heightAnchor.constraint(equalToConstant: Measurements.getStandardButtonHeight()),
 			minusScaleButton.widthAnchor.constraint(equalToConstant: Measurements.getStandardButtonHeight()),
-			minusScaleButton.trailingAnchor.constraint(equalTo: compassButton.leadingAnchor, constant: -Measurements.getPadding()),
-			minusScaleButton.centerYAnchor.constraint(equalTo: compassButton.centerYAnchor),
+			minusScaleButton.topAnchor.constraint(equalTo: plusScaleButton.bottomAnchor, constant: Measurements.getPadding()),
+			minusScaleButton.centerXAnchor.constraint(equalTo: compassButton.centerXAnchor),
 			
 			plusScaleButton.heightAnchor.constraint(equalToConstant: Measurements.getStandardButtonHeight()),
 			plusScaleButton.widthAnchor.constraint(equalToConstant: Measurements.getStandardButtonHeight()),
-			plusScaleButton.trailingAnchor.constraint(equalTo: minusScaleButton.leadingAnchor, constant: -Measurements.getPadding()),
-			plusScaleButton.centerYAnchor.constraint(equalTo: compassButton.centerYAnchor),
+			plusScaleButton.topAnchor.constraint(equalTo: compassButton.bottomAnchor, constant: Measurements.getPadding()),
+			plusScaleButton.centerXAnchor.constraint(equalTo: compassButton.centerXAnchor),
 			
 			compassButton.trailingAnchor.constraint(equalTo: margins.trailingAnchor),
-			compassButton.bottomAnchor.constraint(equalTo: margins.bottomAnchor, constant: Measurements.getPaddingFromBottomMargin()),
+			compassButton.topAnchor.constraint(equalTo: settingsButton.bottomAnchor, constant: Measurements.getPadding()),
 			compassButton.widthAnchor.constraint(equalToConstant: Measurements.getStandardButtonWidth()),
 			compassButton.heightAnchor.constraint(equalToConstant: Measurements.getStandardButtonWidth()),
 			

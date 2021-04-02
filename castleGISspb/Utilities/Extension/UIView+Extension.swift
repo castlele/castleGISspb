@@ -15,4 +15,11 @@ extension UIView {
 			self.addSubview(view)
 		}
 	}
+
+	func setShadow(_ shadow: Shadow) {
+		self.layer.shadowRadius = shadow.radius
+		self.layer.shadowOffset = shadow.offset
+		self.layer.shadowOpacity = shadow.opacity
+		self.layer.shadowColor = shadow.color.cgColor
+	}
 }

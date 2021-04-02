@@ -16,9 +16,7 @@
 		7B40E8642615DFF60071D1B2 /* ArcGIS.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7B40E8622615DFF60071D1B2 /* ArcGIS.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7B40E86D2615E2330071D1B2 /* MapButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B40E86C2615E2330071D1B2 /* MapButtonView.swift */; };
 		7B40E8712615E2840071D1B2 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B40E8702615E2840071D1B2 /* TabBarViewController.swift */; };
-		7B5ABBB225FB48FE00DF8F5E /* Measurements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5ABBB125FB48FE00DF8F5E /* Measurements.swift */; };
 		7B5ABBB425FB51B700DF8F5E /* Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5ABBB325FB51B700DF8F5E /* Shadow.swift */; };
-		7B5ABBB625FB522E00DF8F5E /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5ABBB525FB522E00DF8F5E /* UIButton+Extension.swift */; };
 		7B5DF17A25F506BA00F8900E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5DF17925F506BA00F8900E /* AppDelegate.swift */; };
 		7B5DF17C25F506BA00F8900E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5DF17B25F506BA00F8900E /* SceneDelegate.swift */; };
 		7B5DF17E25F506BA00F8900E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5DF17D25F506BA00F8900E /* MapViewController.swift */; };
@@ -30,10 +28,15 @@
 		7B5DF19F25F507DF00F8900E /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5DF19E25F507DF00F8900E /* UIView+Extension.swift */; };
 		7B5DF1A125F5080800F8900E /* AGSGeoView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5DF1A025F5080800F8900E /* AGSGeoView+Extension.swift */; };
 		7B5DF1A325F5082A00F8900E /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5DF1A225F5082A00F8900E /* ButtonView.swift */; };
+		7B6C04F02617277F000DDD46 /* GeneralInfoButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6C04EF2617277F000DDD46 /* GeneralInfoButtonView.swift */; };
 		7B6D828E25F88A7C00F8F4B6 /* SceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6D828D25F88A7C00F8F4B6 /* SceneView.swift */; };
 		7B6D829025F8968C00F8F4B6 /* SceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6D828F25F8968C00F8F4B6 /* SceneViewController.swift */; };
+		7B6F37D926174A40006BC760 /* FancyTabBarController in Frameworks */ = {isa = PBXBuildFile; productRef = 7B6F37D826174A40006BC760 /* FancyTabBarController */; };
 		7BBBC52625F77C1000AF10AC /* DividerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBBC52525F77C1000AF10AC /* DividerView.swift */; };
 		7BC3A84525FBD546002973E3 /* ShowcaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC3A84425FBD546002973E3 /* ShowcaseView.swift */; };
+		7BC82A43261749740055FEAB /* ColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC82A40261749740055FEAB /* ColorPicker.swift */; };
+		7BC82A44261749740055FEAB /* Measurements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC82A41261749740055FEAB /* Measurements.swift */; };
+		7BC82A45261749740055FEAB /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC82A42261749740055FEAB /* Networking.swift */; };
 		7BE6B0A1260DD97500018329 /* Lacalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7BE6B0A3260DD97500018329 /* Lacalizable.strings */; };
 		7BEA98D225F519F1009DE4E4 /* ColorSets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BEA98D125F519F1009DE4E4 /* ColorSets.xcassets */; };
 		7BEA98D425F51A1B009DE4E4 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BEA98D325F51A1B009DE4E4 /* Endpoint.swift */; };
@@ -43,10 +46,7 @@
 		7BEA98DF25F51ADA009DE4E4 /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BEA98DE25F51ADA009DE4E4 /* RowView.swift */; };
 		7BEA98E125F51B07009DE4E4 /* SectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BEA98E025F51B07009DE4E4 /* SectionView.swift */; };
 		7BEA98E325F51B3B009DE4E4 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BEA98E225F51B3B009DE4E4 /* SettingsViewController.swift */; };
-		7BEA98E525F51B56009DE4E4 /* ColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BEA98E425F51B56009DE4E4 /* ColorPicker.swift */; };
-		7BEA98E925F51B86009DE4E4 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BEA98E825F51B86009DE4E4 /* Networking.swift */; };
 		7BF4468425FA43A0005F9E45 /* BasemapPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF4468325FA43A0005F9E45 /* BasemapPickerViewController.swift */; };
-		7BFEB5E626172589002421D6 /* FancyTabBarController in Frameworks */ = {isa = PBXBuildFile; productRef = 7BFEB5E526172589002421D6 /* FancyTabBarController */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -72,9 +72,7 @@
 		7B40E8622615DFF60071D1B2 /* ArcGIS.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = ArcGIS.xcframework; path = ../../../../Library/SDKs/ArcGIS/Frameworks/ArcGIS.xcframework; sourceTree = "<group>"; };
 		7B40E86C2615E2330071D1B2 /* MapButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapButtonView.swift; sourceTree = "<group>"; };
 		7B40E8702615E2840071D1B2 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
-		7B5ABBB125FB48FE00DF8F5E /* Measurements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Measurements.swift; sourceTree = "<group>"; };
 		7B5ABBB325FB51B700DF8F5E /* Shadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shadow.swift; sourceTree = "<group>"; };
-		7B5ABBB525FB522E00DF8F5E /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
 		7B5DF17625F506BA00F8900E /* castleGISspb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = castleGISspb.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B5DF17925F506BA00F8900E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7B5DF17B25F506BA00F8900E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -87,10 +85,14 @@
 		7B5DF19E25F507DF00F8900E /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		7B5DF1A025F5080800F8900E /* AGSGeoView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AGSGeoView+Extension.swift"; sourceTree = "<group>"; };
 		7B5DF1A225F5082A00F8900E /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		7B6C04EF2617277F000DDD46 /* GeneralInfoButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralInfoButtonView.swift; sourceTree = "<group>"; };
 		7B6D828D25F88A7C00F8F4B6 /* SceneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneView.swift; sourceTree = "<group>"; };
 		7B6D828F25F8968C00F8F4B6 /* SceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneViewController.swift; sourceTree = "<group>"; };
 		7BBBC52525F77C1000AF10AC /* DividerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DividerView.swift; sourceTree = "<group>"; };
 		7BC3A84425FBD546002973E3 /* ShowcaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowcaseView.swift; sourceTree = "<group>"; };
+		7BC82A40261749740055FEAB /* ColorPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ColorPicker.swift; path = "../../../../../Library/Mobile Documents/com~apple~CloudDocs/.Trash/ColorPicker.swift"; sourceTree = "<group>"; };
+		7BC82A41261749740055FEAB /* Measurements.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Measurements.swift; path = "../../../../../Library/Mobile Documents/com~apple~CloudDocs/.Trash/Measurements.swift"; sourceTree = "<group>"; };
+		7BC82A42261749740055FEAB /* Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Networking.swift; path = "../../../../../Library/Mobile Documents/com~apple~CloudDocs/.Trash/Networking.swift"; sourceTree = "<group>"; };
 		7BE6B0A2260DD97500018329 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Lacalizable.strings; sourceTree = "<group>"; };
 		7BE6B0A8260DE1A200018329 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7BE6B0AA260DE65F00018329 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Lacalizable.strings; sourceTree = "<group>"; };
@@ -102,8 +104,6 @@
 		7BEA98DE25F51ADA009DE4E4 /* RowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowView.swift; sourceTree = "<group>"; };
 		7BEA98E025F51B07009DE4E4 /* SectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionView.swift; sourceTree = "<group>"; };
 		7BEA98E225F51B3B009DE4E4 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		7BEA98E425F51B56009DE4E4 /* ColorPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPicker.swift; sourceTree = "<group>"; };
-		7BEA98E825F51B86009DE4E4 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		7BF4467E25F9FD19005F9E45 /* ArcGIS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ArcGIS-Info.plist"; sourceTree = "<group>"; };
 		7BF4468325FA43A0005F9E45 /* BasemapPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasemapPickerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -113,7 +113,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7BFEB5E626172589002421D6 /* FancyTabBarController in Frameworks */,
+				7B6F37D926174A40006BC760 /* FancyTabBarController in Frameworks */,
 				7B40E8632615DFF60071D1B2 /* ArcGIS.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,16 +135,6 @@
 				7B408750260761760040764D /* InteractiveModalPresentationController.swift */,
 			);
 			path = Components;
-			sourceTree = "<group>";
-		};
-		7B5ABBB025FB47BA00DF8F5E /* StaticObjects */ = {
-			isa = PBXGroup;
-			children = (
-				7BEA98E425F51B56009DE4E4 /* ColorPicker.swift */,
-				7BEA98E825F51B86009DE4E4 /* Networking.swift */,
-				7B5ABBB125FB48FE00DF8F5E /* Measurements.swift */,
-			);
-			path = StaticObjects;
 			sourceTree = "<group>";
 		};
 		7B5DF16D25F506BA00F8900E = {
@@ -191,8 +181,8 @@
 		7B5DF19325F5070F00F8900E /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				7BC82A3F261749680055FEAB /* StaticObjects */,
 				7B5DF19925F5078500F8900E /* Extension */,
-				7B5ABBB025FB47BA00DF8F5E /* StaticObjects */,
 				7B5DF19C25F507B600F8900E /* Coordinates.swift */,
 				7B5ABBB325FB51B700DF8F5E /* Shadow.swift */,
 				7BEA98D325F51A1B009DE4E4 /* Endpoint.swift */,
@@ -238,9 +228,18 @@
 				7B5DF19A25F507A300F8900E /* CLLocationCoordinate+Extension.swift */,
 				7B5DF19E25F507DF00F8900E /* UIView+Extension.swift */,
 				7B5DF1A025F5080800F8900E /* AGSGeoView+Extension.swift */,
-				7B5ABBB525FB522E00DF8F5E /* UIButton+Extension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		7BC82A3F261749680055FEAB /* StaticObjects */ = {
+			isa = PBXGroup;
+			children = (
+				7BC82A40261749740055FEAB /* ColorPicker.swift */,
+				7BC82A41261749740055FEAB /* Measurements.swift */,
+				7BC82A42261749740055FEAB /* Networking.swift */,
+			);
+			path = StaticObjects;
 			sourceTree = "<group>";
 		};
 		7BEA98D525F51A2B009DE4E4 /* District */ = {
@@ -272,6 +271,7 @@
 				7BC3A84425FBD546002973E3 /* ShowcaseView.swift */,
 				7B1B884F260639A2001235FE /* CompassButton.swift */,
 				7B40E86C2615E2330071D1B2 /* MapButtonView.swift */,
+				7B6C04EF2617277F000DDD46 /* GeneralInfoButtonView.swift */,
 			);
 			path = Final;
 			sourceTree = "<group>";
@@ -306,7 +306,7 @@
 			);
 			name = castleGISspb;
 			packageProductDependencies = (
-				7BFEB5E526172589002421D6 /* FancyTabBarController */,
+				7B6F37D826174A40006BC760 /* FancyTabBarController */,
 			);
 			productName = castleGISspb;
 			productReference = 7B5DF17625F506BA00F8900E /* castleGISspb.app */;
@@ -336,7 +336,7 @@
 			);
 			mainGroup = 7B5DF16D25F506BA00F8900E;
 			packageReferences = (
-				7BFEB5E426172589002421D6 /* XCRemoteSwiftPackageReference "FancyTabBarViewController" */,
+				7B6F37D726174A40006BC760 /* XCRemoteSwiftPackageReference "FancyTabBarViewController" */,
 			);
 			productRefGroup = 7B5DF17725F506BA00F8900E /* Products */;
 			projectDirPath = "";
@@ -367,7 +367,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B1B8850260639A2001235FE /* CompassButton.swift in Sources */,
-				7BEA98E925F51B86009DE4E4 /* Networking.swift in Sources */,
 				7BEA98D925F51A71009DE4E4 /* DistrictObject.swift in Sources */,
 				7BEA98DF25F51ADA009DE4E4 /* RowView.swift in Sources */,
 				7B5DF17E25F506BA00F8900E /* MapViewController.swift in Sources */,
@@ -375,16 +374,17 @@
 				7B40E86D2615E2330071D1B2 /* MapButtonView.swift in Sources */,
 				7B5DF19F25F507DF00F8900E /* UIView+Extension.swift in Sources */,
 				7B5DF19B25F507A300F8900E /* CLLocationCoordinate+Extension.swift in Sources */,
-				7BEA98E525F51B56009DE4E4 /* ColorPicker.swift in Sources */,
 				7B5DF19825F5076D00F8900E /* MapView.swift in Sources */,
+				7BC82A43261749740055FEAB /* ColorPicker.swift in Sources */,
 				7BEA98DB25F51A92009DE4E4 /* DistrictModel.swift in Sources */,
 				7BF4468425FA43A0005F9E45 /* BasemapPickerViewController.swift in Sources */,
 				7BEA98DD25F51AAC009DE4E4 /* CheckBoxView.swift in Sources */,
 				7B5ABBB425FB51B700DF8F5E /* Shadow.swift in Sources */,
+				7B6C04F02617277F000DDD46 /* GeneralInfoButtonView.swift in Sources */,
 				7BEA98D425F51A1B009DE4E4 /* Endpoint.swift in Sources */,
 				7B5DF17A25F506BA00F8900E /* AppDelegate.swift in Sources */,
 				7B408751260761760040764D /* InteractiveModalPresentationController.swift in Sources */,
-				7B5ABBB625FB522E00DF8F5E /* UIButton+Extension.swift in Sources */,
+				7BC82A45261749740055FEAB /* Networking.swift in Sources */,
 				7B5DF17C25F506BA00F8900E /* SceneDelegate.swift in Sources */,
 				7BEA98E325F51B3B009DE4E4 /* SettingsViewController.swift in Sources */,
 				7B6D828E25F88A7C00F8F4B6 /* SceneView.swift in Sources */,
@@ -394,9 +394,9 @@
 				7B6D829025F8968C00F8F4B6 /* SceneViewController.swift in Sources */,
 				7B40E8712615E2840071D1B2 /* TabBarViewController.swift in Sources */,
 				7B40874F260760830040764D /* InteractiveTransitionDelegate.swift in Sources */,
+				7BC82A44261749740055FEAB /* Measurements.swift in Sources */,
 				7B5DF1A125F5080800F8900E /* AGSGeoView+Extension.swift in Sources */,
 				7B5DF19D25F507B600F8900E /* Coordinates.swift in Sources */,
-				7B5ABBB225FB48FE00DF8F5E /* Measurements.swift in Sources */,
 				7B5DF1A325F5082A00F8900E /* ButtonView.swift in Sources */,
 				7B06DB7625FE3B28001C009E /* DetailWebViewController.swift in Sources */,
 			);
@@ -605,20 +605,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		7BFEB5E426172589002421D6 /* XCRemoteSwiftPackageReference "FancyTabBarViewController" */ = {
+		7B6F37D726174A40006BC760 /* XCRemoteSwiftPackageReference "FancyTabBarViewController" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/castlele/FancyTabBarViewController.git";
 			requirement = {
 				kind = revision;
-				revision = 7eab038216eb84a8575732ed4c9df1fdca2855d7;
+				revision = c8435b3e9a25c223a90642425314368bcbd66e43;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		7BFEB5E526172589002421D6 /* FancyTabBarController */ = {
+		7B6F37D826174A40006BC760 /* FancyTabBarController */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 7BFEB5E426172589002421D6 /* XCRemoteSwiftPackageReference "FancyTabBarViewController" */;
+			package = 7B6F37D726174A40006BC760 /* XCRemoteSwiftPackageReference "FancyTabBarViewController" */;
 			productName = FancyTabBarController;
 		};
 /* End XCSwiftPackageProductDependency section */

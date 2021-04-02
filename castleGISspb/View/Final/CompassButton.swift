@@ -44,7 +44,6 @@ final class CompassButton: UIButton {
 	}
 	
 	private struct Colors {
-		
 		static let strokeColor : UIColor = .white
 		static let baseColor : UIColor = .black
 		static let nArrowColor : UIColor = .red
