@@ -19,7 +19,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 		guard let windowScene = (scene as? UIWindowScene) else { return }
 		
 		let navigationController = UINavigationController()
-		let mapVC = BlankViewController()
+		let mapVC = TabBarViewController()
 		navigationController.viewControllers = [mapVC]
 		navigationController.setNavigationBarHidden(true, animated: true)
 		
