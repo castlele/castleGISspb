@@ -32,11 +32,11 @@
 		7B6D828E25F88A7C00F8F4B6 /* SceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6D828D25F88A7C00F8F4B6 /* SceneView.swift */; };
 		7B6D829025F8968C00F8F4B6 /* SceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6D828F25F8968C00F8F4B6 /* SceneViewController.swift */; };
 		7B6F37D926174A40006BC760 /* FancyTabBarController in Frameworks */ = {isa = PBXBuildFile; productRef = 7B6F37D826174A40006BC760 /* FancyTabBarController */; };
+		7B6F37DD261789EF006BC760 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6F37DA261789EE006BC760 /* Networking.swift */; };
+		7B6F37DE261789EF006BC760 /* ColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6F37DB261789EE006BC760 /* ColorPicker.swift */; };
+		7B6F37DF261789EF006BC760 /* Measurements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6F37DC261789EF006BC760 /* Measurements.swift */; };
 		7BBBC52625F77C1000AF10AC /* DividerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBBC52525F77C1000AF10AC /* DividerView.swift */; };
 		7BC3A84525FBD546002973E3 /* ShowcaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC3A84425FBD546002973E3 /* ShowcaseView.swift */; };
-		7BC82A43261749740055FEAB /* ColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC82A40261749740055FEAB /* ColorPicker.swift */; };
-		7BC82A44261749740055FEAB /* Measurements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC82A41261749740055FEAB /* Measurements.swift */; };
-		7BC82A45261749740055FEAB /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC82A42261749740055FEAB /* Networking.swift */; };
 		7BE6B0A1260DD97500018329 /* Lacalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7BE6B0A3260DD97500018329 /* Lacalizable.strings */; };
 		7BEA98D225F519F1009DE4E4 /* ColorSets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BEA98D125F519F1009DE4E4 /* ColorSets.xcassets */; };
 		7BEA98D425F51A1B009DE4E4 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BEA98D325F51A1B009DE4E4 /* Endpoint.swift */; };
@@ -88,11 +88,11 @@
 		7B6C04EF2617277F000DDD46 /* GeneralInfoButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralInfoButtonView.swift; sourceTree = "<group>"; };
 		7B6D828D25F88A7C00F8F4B6 /* SceneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneView.swift; sourceTree = "<group>"; };
 		7B6D828F25F8968C00F8F4B6 /* SceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneViewController.swift; sourceTree = "<group>"; };
+		7B6F37DA261789EE006BC760 /* Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		7B6F37DB261789EE006BC760 /* ColorPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPicker.swift; sourceTree = "<group>"; };
+		7B6F37DC261789EF006BC760 /* Measurements.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Measurements.swift; sourceTree = "<group>"; };
 		7BBBC52525F77C1000AF10AC /* DividerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DividerView.swift; sourceTree = "<group>"; };
 		7BC3A84425FBD546002973E3 /* ShowcaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowcaseView.swift; sourceTree = "<group>"; };
-		7BC82A40261749740055FEAB /* ColorPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ColorPicker.swift; path = "../../../../../Library/Mobile Documents/com~apple~CloudDocs/.Trash/ColorPicker.swift"; sourceTree = "<group>"; };
-		7BC82A41261749740055FEAB /* Measurements.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Measurements.swift; path = "../../../../../Library/Mobile Documents/com~apple~CloudDocs/.Trash/Measurements.swift"; sourceTree = "<group>"; };
-		7BC82A42261749740055FEAB /* Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Networking.swift; path = "../../../../../Library/Mobile Documents/com~apple~CloudDocs/.Trash/Networking.swift"; sourceTree = "<group>"; };
 		7BE6B0A2260DD97500018329 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Lacalizable.strings; sourceTree = "<group>"; };
 		7BE6B0A8260DE1A200018329 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7BE6B0AA260DE65F00018329 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Lacalizable.strings; sourceTree = "<group>"; };
@@ -235,9 +235,9 @@
 		7BC82A3F261749680055FEAB /* StaticObjects */ = {
 			isa = PBXGroup;
 			children = (
-				7BC82A40261749740055FEAB /* ColorPicker.swift */,
-				7BC82A41261749740055FEAB /* Measurements.swift */,
-				7BC82A42261749740055FEAB /* Networking.swift */,
+				7B6F37DB261789EE006BC760 /* ColorPicker.swift */,
+				7B6F37DC261789EF006BC760 /* Measurements.swift */,
+				7B6F37DA261789EE006BC760 /* Networking.swift */,
 			);
 			path = StaticObjects;
 			sourceTree = "<group>";
@@ -375,7 +375,7 @@
 				7B5DF19F25F507DF00F8900E /* UIView+Extension.swift in Sources */,
 				7B5DF19B25F507A300F8900E /* CLLocationCoordinate+Extension.swift in Sources */,
 				7B5DF19825F5076D00F8900E /* MapView.swift in Sources */,
-				7BC82A43261749740055FEAB /* ColorPicker.swift in Sources */,
+				7B6F37DE261789EF006BC760 /* ColorPicker.swift in Sources */,
 				7BEA98DB25F51A92009DE4E4 /* DistrictModel.swift in Sources */,
 				7BF4468425FA43A0005F9E45 /* BasemapPickerViewController.swift in Sources */,
 				7BEA98DD25F51AAC009DE4E4 /* CheckBoxView.swift in Sources */,
@@ -384,7 +384,6 @@
 				7BEA98D425F51A1B009DE4E4 /* Endpoint.swift in Sources */,
 				7B5DF17A25F506BA00F8900E /* AppDelegate.swift in Sources */,
 				7B408751260761760040764D /* InteractiveModalPresentationController.swift in Sources */,
-				7BC82A45261749740055FEAB /* Networking.swift in Sources */,
 				7B5DF17C25F506BA00F8900E /* SceneDelegate.swift in Sources */,
 				7BEA98E325F51B3B009DE4E4 /* SettingsViewController.swift in Sources */,
 				7B6D828E25F88A7C00F8F4B6 /* SceneView.swift in Sources */,
@@ -394,11 +393,12 @@
 				7B6D829025F8968C00F8F4B6 /* SceneViewController.swift in Sources */,
 				7B40E8712615E2840071D1B2 /* TabBarViewController.swift in Sources */,
 				7B40874F260760830040764D /* InteractiveTransitionDelegate.swift in Sources */,
-				7BC82A44261749740055FEAB /* Measurements.swift in Sources */,
 				7B5DF1A125F5080800F8900E /* AGSGeoView+Extension.swift in Sources */,
+				7B6F37DF261789EF006BC760 /* Measurements.swift in Sources */,
 				7B5DF19D25F507B600F8900E /* Coordinates.swift in Sources */,
 				7B5DF1A325F5082A00F8900E /* ButtonView.swift in Sources */,
 				7B06DB7625FE3B28001C009E /* DetailWebViewController.swift in Sources */,
+				7B6F37DD261789EF006BC760 /* Networking.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

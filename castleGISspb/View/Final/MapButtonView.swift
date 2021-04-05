@@ -65,6 +65,15 @@ final class MapButtonView: UIButton, TabBarItem {
 		return points
 	}()
 
+	private lazy var mapPointView: MapPointView = {
+		let view = MapPointView(frame: CGRect(x: 0, y: 0, width: 15, height: 15))
+		view.translatesAutoresizingMaskIntoConstraints = false
+		view.isOpaque = false
+		addSubview(view)
+		view.isHidden = true
+		return view
+	}()
+
 	var isActivated: Bool = false
 	
 	override required init(frame: CGRect) {
@@ -86,14 +95,34 @@ final class MapButtonView: UIButton, TabBarItem {
 		
 		translatesAutoresizingMaskIntoConstraints = false
 	}
+}
+
+// MARK:- Drawing the view
+extension MapButtonView {
 
 	override func draw(_ rect: CGRect) {
 		backgroundColor = .clear
 
 		if isActivated {
+			animateMapPoint(isHidden: false)
 			drawOpenedMap()
 		} else {
+			animateMapPoint(isHidden: true)
 			drawClosedMap()
+		}
+	}
+
+	private func animateMapPoint(isHidden: Bool) {
+		if isHidden {
+			UIView.animate(withDuration: 0.5) {
+				self.mapPointView.isHidden = isHidden
+				self.mapPointView.transform = CGAffineTransform.identity
+			}
+		} else {
+			UIView.animate(withDuration: 0.5) {
+				self.mapPointView.isHidden = isHidden
+				self.mapPointView.transform = CGAffineTransform(translationX: self.STANDARD_SIZE / 3, y: self.STANDARD_SIZE / 5.5)
+			}
 		}
 	}
 
@@ -180,5 +209,92 @@ final class MapButtonView: UIButton, TabBarItem {
 		) 
 		path.setLineDash([2.5], count: 1, phase: 0)
 		setStroke(for: path)
+	}
+}
+
+// MARK:- MapPointView 
+class MapPointView: UIView {
+
+	private var HEIGHT: CGFloat {
+		frame.height
+	}
+
+	private var WIDTH: CGFloat {
+		frame.width
+	}
+
+	private var ORIGIN: CGPoint {
+		let x = WIDTH / 2
+		let y = HEIGHT / 4
+
+		return CGPoint(x: x, y: y)
+	}
+
+	private var RADIUS: CGFloat {
+		WIDTH / 4 - 1
+	}
+
+	private let STROKE_WIDTH : CGFloat = 2
+	
+	override func draw(_ rect: CGRect) {
+		drawCircle()
+		drawBottom()
+	}
+
+	private func drawCircle() {
+		let circlePath = UIBezierPath(
+			arcCenter: ORIGIN, 
+			radius: RADIUS, 
+			startAngle: .pi, 
+			endAngle: .pi * 4, 
+			clockwise: true
+		)
+		UIColor.red.setStroke()
+		circlePath.lineWidth = STROKE_WIDTH
+		circlePath.stroke()
+	}
+
+	private func drawBottom() {
+		let bottomPath = UIBezierPath()
+		drawLeftCurveLine(for: bottomPath)
+		drawRightCurveLine(for: bottomPath)
+		closeBottomPath(for: bottomPath)
+
+		UIColor.red.setFill()
+		bottomPath.fill()
+	}
+
+	private func drawLeftCurveLine(for path: UIBezierPath) {
+		let startPoint = CGPoint(x: ORIGIN.x - RADIUS - 3, y: ORIGIN.y + 3)
+		let endPoint = CGPoint(x: ORIGIN.x, y: HEIGHT)
+
+		path.move(to: startPoint)	
+		path.addCurve(
+			to: endPoint, 
+			controlPoint1: CGPoint(x: WIDTH / 3, y: HEIGHT / 2 + HEIGHT / 6),
+			controlPoint2: CGPoint(x: ORIGIN.x - 3, y: HEIGHT / 2 - 2 * HEIGHT / 6)
+		) 
+	}
+
+	private func drawRightCurveLine(for path: UIBezierPath) {
+		let startPoint = CGPoint(x: ORIGIN.x + RADIUS - 3, y: ORIGIN.y + 3)
+		let endPoint = CGPoint(x: ORIGIN.x, y: HEIGHT)
+
+		path.move(to: startPoint)	
+		path.addCurve(
+			to: endPoint, 
+			controlPoint1: CGPoint(x: 2 * WIDTH / 3, y: HEIGHT / 2 + HEIGHT / 6),
+			controlPoint2: CGPoint(x: ORIGIN.x + 3, y: HEIGHT / 2 - 2 * HEIGHT / 6)
+		) 
+	}
+
+	private func closeBottomPath(for path: UIBezierPath) {
+		let startPoint = CGPoint(x: ORIGIN.x - RADIUS - 3, y: ORIGIN.y + 3)
+		let controlPoint = CGPoint(x: ORIGIN.x, y: ORIGIN.y + RADIUS)
+		let endPoint = CGPoint(x: ORIGIN.x + RADIUS - 3, y: ORIGIN.y + 3)
+
+		path.move(to: startPoint)
+		path.addLine(to: controlPoint)
+		path.addLine(to: endPoint)
 	}
 }

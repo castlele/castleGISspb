@@ -7,9 +7,9 @@
 */
 
 // SettingsViewControlelr
-"Подсветка районов" = "Districts' highlighting";
-"Информация о районах" = "Districts' info";
-"Лупа" = "Magnifier";
-"Сетка" = "Grid";
+"Districts' highlighting" = "Districts' highlighting";
+"Districts' info" = "Districts' info";
+"Magnifier" = "Magnifier";
+"Grid" = "Grid";
 
-"Back" = "< Назад";
+"Back" = "< Back";

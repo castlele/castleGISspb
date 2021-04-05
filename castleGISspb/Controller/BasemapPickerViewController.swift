@@ -267,6 +267,7 @@ final class BasemapPickerViewController: UIViewController {
 	}
 }
 
+// MARK:- UIViewControllerTransitioningDelegate
 extension BasemapPickerViewController: UIViewControllerTransitioningDelegate {
 	
 	override func viewWillDisappear(_ animated: Bool) {
